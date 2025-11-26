@@ -1,0 +1,107 @@
+.app-footer {
+  width: 100%;
+  background-color: #e41818; /* Dark background */
+  color: #fff; /* Light text */
+  padding-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* --- 2. Main Content Layout (Flexbox) --- */
+.footer-content {
+  display: flex;
+  background-color: #0900fb;
+  height: 200px;
+  width: 100%;
+  /* Use space-around or space-between to spread the columns */
+  justify-content: space-around; 
+  max-width: 100%;
+  padding: 10px 20px 40px 20px;/* Padding on sides and bottom */
+  flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+}
+
+/* --- 3. Styling Each Section (Quick Links, Social, Contact) --- */
+.footer-section {
+  /* Gives each section a minimum width to prevent stacking too early */
+  min-width: 150px; 
+  margin-bottom: 20px; /* Space between sections on small screens */
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #f2ff00; /* A contrasting accent color */
+  border-bottom: 2px solid #12d400; /* Subtle line under heading */
+  padding-bottom: 5px;
+}
+
+/* --- 4. Styling Lists and Links --- */
+.footer-section ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #ccc; /* Lighter link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #fff; /* White on hover */
+  text-decoration: underline;
+}
+
+/* --- 5. Social Media & Contact Text --- */
+.footer-section p {
+  margin: 0 0 10px 0;
+}
+
+/* --- 6. The Bottom Bar (Copyright and Legal) --- */
+.footer-bottom {
+  background-color: #0900fb; /* Slightly darker background for the bottom bar */
+  text-align: center;
+  max-width:100% ;
+  padding: 10px ;/* Padding on sides and bottom */
+  border-top: 1px solid #000000c7;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: yellow;
+}
+
+.footer-bottom .legal-links a {
+  color: #edfe00;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-bottom .legal-links a:hover {
+  color: #fff;
+}
+
+/* --- 7. Responsive Design (For Mobile Screens) --- */
+@media (max-width: 768px) {
+  .footer-content {
+    /* Stack columns vertically on smaller screens */
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+  }
+
+  .footer-section {
+    min-width: 100%; /* Make each section take full width */
+  }
+
+  .footer-section h3 {
+      /* Re-center the border for headers */
+      margin: 0 auto 15px auto;
+      display: inline-block;
+  }
+}

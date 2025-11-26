@@ -1,0 +1,38 @@
+.div-car h1 {
+    text-align: center;
+  /* display: flex; */
+  font-size: 18px;
+  margin-bottom: 30px; 
+  /* justify-content: space-around; */
+  color: #f2ff00;  
+  padding-bottom: 5px;
+  /* flex-wrap: wrap; */
+  /* A contrasting accent color */
+}
+.btn{
+    background-color: yellow;
+}
+
+header {
+    background-color:#0900fb;
+    padding: 20px;
+}
+h1 {
+    text-align: left;
+    font-size: 30px;
+    color: yellow;
+}
+
+header nav ul {
+    list-style: none;
+    gap: 20px;
+    display: flex;
+    text-align: center;
+    margin: 20px 0 0 0;
+    justify-content: center;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 20px;
+}
